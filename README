@@ -1,13 +1,13 @@
-This is a Quine-McCluskey minimizer library modified from Stefan
-Moebius' command line only version[1]. I didn't change any of the
-algorithm. I only changed the input and output, and also added some
-documents.
+This is a Quine-McCluskey minimizer library modified from Stefan Moebius'
+command line only version[1]. I didn't change any of the algorithm. I only
+changed the input and output, and also added some documents.
 
 Function explanation can be found in qmc.h. To use it, simply include
-quine_mc_cluskey.c and qmc.h in your project and compile.
+quine_mc_cluskey.c and qmc.h in your project and compile. An example is
+available in example.c.
 
-All files are in public domain, thus no guarantee is provided, but you
-can use it freely as you wish no matter for what use.
+All files are in public domain, thus no guarantee is provided, but you can use
+it freely as you wish no matter for what use.
 
 The original readme written by Stefan is readme.orig.txt.
 
