@@ -88,5 +88,7 @@ int main()
 
     printf("\n");
 
+    qmc_free(out);
+
     return 0;
 }
