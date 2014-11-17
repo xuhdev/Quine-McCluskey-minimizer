@@ -24,7 +24,7 @@ int main()
     size_t out_size;
     size_t i, j;
 
-    /* the truth table -- 2 inputs 1 output
+    /* the truth table -- 3 inputs 1 output
      * 
      * C  B  A  o
      * -------
@@ -85,6 +85,12 @@ int main()
             }
         }
     }
+
+    if (out_size == 0) /* All table entries are true or false */
+        if (table[0])
+            printf("TRUE");
+        else
+            printf("FALSE");
 
     printf("\n");
 

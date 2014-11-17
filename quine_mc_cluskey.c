@@ -143,6 +143,21 @@ int qmc_simplify(const bool * table, size_t num, int ** out, size_t* out_size) {
     int count = 0;
     int lastprim = 0;
     int res = 0; // actual result  /  Ist-Ausgabe
+    size_t table_length = ((size_t) 1) << num;
+
+    // return and set out_size to 0 if all is true or all is false
+    for (x = 1; x < table_length; ++ x)
+    {
+        if (table[0] != table[x])
+            break;
+    }
+
+    if (x == table_length) // All entries are equal, return now
+    {
+        *out_size = 0;
+        *out = NULL;
+        return 0;
+    }
 
     // Fill all arrays with default values / Alle Arrays mit Standardwert auff�llen
     for (x = 0; x < MAX; x++) {

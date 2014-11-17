@@ -32,7 +32,8 @@ extern "C" {
  * false, 1 means true, -1 means this literal is not in this clause. *out must
  * be released by using qmc_free() when it's no longer been used.
  *
- * @param out_size is the output size. See @out for details.
+ * @param out_size is the output size. If @out_size is 0, it means all
+ * entry in the table are true or false. See @out for more details.
  *
  * @return 0 if succeeds, otherwise fails.
  */
